@@ -1,9 +1,0 @@
-******************* archive log clear
---connect to RMAN
-rman TARGET/
-
--- Check all the archive logs
-RMAN> list archivelog all;
-
---Delete old archive logs
-RMAN>DELETE ARCHIVELOG ALL COMPLETED BEFORE 'sysdate-1'; 
